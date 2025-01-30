@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <input type="search" placeholder="Enter a city..." required />
+        <input type="submit" value="Search" />
+      </form>
+      <div class="flex-container">
+        <div class="flex-left">
+          <h1>City</h1>
+          <div class="current-date">30/01/2025</div>
+          <div class="current-temp">24°C</div>
+          <div class="feels-like-temp">20°C</div>
+        </div>
+        <div class="flex-right">
+          <img
+            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-night.png"
+            alt="moon"
+          />
+        </div>
+        <p class="description">Cloudy</p>
+        <div class="flex-container">
+          <div class="wind">Wind <br />36</div>
+          <div class="pressure">Pressure <br />250</div>
+          <div class="humidity">Humidity <br />45</div>
+        </div>
+      </div>
+      <script src="src/index.js"></script>
+    </div>
+  </body>
+</html>
