@@ -1,1 +1,10 @@
+.container {
+  margin: 0 auto;
+  max-width: 550px;
+  background: violet;
+}
 
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
