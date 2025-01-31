@@ -36,3 +36,8 @@ h1 {
 .current-temp {
   font-size: 45px;
 }
+
+footer {
+  text-align: center;
+  color: white;
+}
