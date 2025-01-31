@@ -7,8 +7,8 @@ body {
   margin: 80px auto;
   max-width: 550px;
   background: violet;
-  /* background: transparent; */
-  /* color: white; */
+  background: transparent;
+  color: white;
 }
 
 .flex-container {
@@ -25,4 +25,12 @@ input {
   padding: 9px;
   border-radius: 5px;
   border: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+.current-temp {
+  font-size: 45px;
 }
