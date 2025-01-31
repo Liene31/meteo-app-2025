@@ -6,9 +6,11 @@ body {
 .container {
   margin: 80px auto;
   max-width: 550px;
-  background: violet;
-  background: transparent;
-  color: white;
+  padding: 25px;
+  background: white;
+  opacity: 0.5;
+  color: black;
+  border-radius: 5px;
 }
 
 .flex-container {
