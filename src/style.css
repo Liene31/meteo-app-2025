@@ -4,12 +4,25 @@ body {
   background-size: cover;
 }
 .container {
-  margin: 0 auto;
+  margin: 80px auto;
   max-width: 550px;
   background: violet;
+  /* background: transparent; */
+  /* color: white; */
 }
 
 .flex-container {
   display: flex;
   justify-content: space-between;
+}
+
+form {
+  text-align: center;
+  padding: 25px;
+}
+
+input {
+  padding: 9px;
+  border-radius: 5px;
+  border: none;
 }
