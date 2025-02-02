@@ -12,9 +12,14 @@ body {
   margin: 120px auto;
   max-width: 550px;
   padding: 30px;
-  background: white;
-  opacity: 0.5;
-  color: black;
+  background: linear-gradient(
+    109.6deg,
+    rgb(36, 45, 57, 0.5) 11.2%,
+    rgb(16, 37, 60, 0.5) 51.2%,
+    rgb(0, 0, 0, 0.5) 98.6%
+  );
+  /* opacity: 0.5; */
+  color: whitesmoke;
   border-radius: 5px;
 }
 
