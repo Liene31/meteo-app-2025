@@ -55,6 +55,13 @@ textarea {
   color: whitesmoke;
 }
 
+input[type="submit"] {
+  background-color: whitesmoke;
+  opacity: 0.6;
+  color: black;
+  font-weight: 600;
+}
+
 h1 {
   margin: 0;
 }
