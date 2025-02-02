@@ -11,7 +11,7 @@ body {
 .container {
   margin: 120px auto;
   max-width: 550px;
-  padding: 30px;
+  padding: 40px;
   background: linear-gradient(
     109.6deg,
     rgb(36, 45, 57, 0.6) 11.2%,
@@ -58,8 +58,9 @@ textarea {
 input[type="submit"] {
   background-color: whitesmoke;
   opacity: 0.6;
-  color: black;
+  color: #213555;
   font-weight: 600;
+  cursor: pointer;
 }
 
 h1 {
@@ -75,6 +76,10 @@ h1 {
   position: relative;
   top: -19px;
   font-weight: 500;
+}
+
+.meteo-details {
+  justify-content: space-around;
 }
 
 footer {
