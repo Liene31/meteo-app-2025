@@ -14,9 +14,9 @@ body {
   padding: 30px;
   background: linear-gradient(
     109.6deg,
-    rgb(36, 45, 57, 0.5) 11.2%,
-    rgb(16, 37, 60, 0.5) 51.2%,
-    rgb(0, 0, 0, 0.5) 98.6%
+    rgb(36, 45, 57, 0.6) 11.2%,
+    rgb(16, 37, 60, 0.6) 51.2%,
+    rgb(0, 0, 0, 0.6) 98.6%
   );
   /* opacity: 0.5; */
   color: whitesmoke;
@@ -39,9 +39,20 @@ input {
   border: none;
 }
 
+::placeholder {
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+*:focus {
+  outline: none;
+}
+
 input[type="search"],
 textarea {
-  background-color: black;
+  background-color: #213555;
+  opacity: 0.6;
+  color: whitesmoke;
 }
 
 h1 {
