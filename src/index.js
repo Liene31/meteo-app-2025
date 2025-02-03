@@ -41,3 +41,15 @@ let currentDate = new Date();
 
 let currentDateElement = document.querySelector(".current-date");
 currentDateElement.innerHTML = showCurrentDate(currentDate);
+
+// Updates City from the Input/Search
+
+function searchCity(event) {
+  event.preventDefault();
+  let searchValue = document.querySelector("#search-value");
+  let cityElement = document.querySelector("h1");
+  cityElement.innerHTML = searchValue.value;
+}
+
+let searchButton = document.querySelector("#search-btn");
+searchButton.addEventListener("click", searchCity);
