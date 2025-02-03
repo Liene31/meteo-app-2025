@@ -32,7 +32,7 @@
             <span class="current-temp-value">24</span
             ><span class="current-temp-unit">°C</span>
           </div>
-          <div class="feels-like-temp">Feels like 20°C</div>
+          <div>Feels like <span class="feels-like-temp">20</span>°C</div>
         </div>
         <div class="flex-right">
           <img
@@ -43,9 +43,9 @@
       </div>
       <p class="description">Cloudy</p>
       <div class="flex-container meteo-details">
-        <div class="wind">Wind <br />36</div>
-        <div class="pressure">Pressure <br />250</div>
-        <div class="humidity">Humidity <br />45</div>
+        <div class="wind">Wind<br /><span id="wind-speed">36</span> m/s</div>
+        <div>Pressure <br /><span class="pressure">250</span></div>
+        <div>Humidity <br /><span class="humidity">45</span></div>
       </div>
     </div>
     <script src="src/index.js"></script>

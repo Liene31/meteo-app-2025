@@ -57,11 +57,36 @@ searchButton.addEventListener("click", searchCity);
 // Updates current weather
 
 function showCurrentMeteo(response) {
-  console.log(response);
+  console.log(response.data);
+
+  let currentTemp = Math.round(response.data.temperature.current);
+  let feelsLikeTemp = Math.round(response.data.temperature.feels_like);
+  let description = response.data.condition.description;
+  let windSpeed = response.data.wind.speed;
+  let pressure = response.data.temperature.pressure;
+  let humidity = response.data.temperature.humidity;
+
+  let currentTempElement = document.querySelector(".current-temp-value");
+  currentTempElement.innerHTML = currentTemp;
+
+  let feelsLikeTempElement = document.querySelector(".feels-like-temp");
+  feelsLikeTempElement.innerHTML = feelsLikeTemp;
+
+  let descriptionElement = document.querySelector(".description");
+  descriptionElement.innerHTML = description;
+
+  let windSpeedElement = document.querySelector("#wind-speed");
+  windSpeedElement.innerHTML = windSpeed;
+
+  let pressureElement = document.querySelector(".pressure");
+  pressureElement.innerHTML = pressure;
+
+  let humidityElement = document.querySelector(".humidity");
+  humidityElement.innerHTML = humidity;
 }
 
 let city = "Oslo";
 let apiKey = `9a5034o3fd0ad6bc1bata98ee2fcd7b0`;
 let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
 
-axios.get(apiUrl).then(showCurrentMeteo(response));
+axios.get(apiUrl).then(showCurrentMeteo);
