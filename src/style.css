@@ -78,6 +78,11 @@ h1 {
   font-weight: 500;
 }
 
+img {
+  width: 150px;
+  opacity: 0.5;
+}
+
 .meteo-details {
   justify-content: space-around;
 }

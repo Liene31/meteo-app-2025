@@ -68,6 +68,7 @@ function showCurrentMeteo(response) {
   let pressure = response.data.temperature.pressure;
   let humidity = response.data.temperature.humidity;
   let city = response.data.city;
+  let weatherIcon = response.data.condition.icon_url;
 
   let currentTempElement = document.querySelector(".current-temp-value");
   currentTempElement.innerHTML = currentTemp;
@@ -89,4 +90,10 @@ function showCurrentMeteo(response) {
 
   let cityElement = document.querySelector("h1");
   cityElement.innerHTML = city;
+
+  let imageElement = document.querySelector("#weather-icon");
+  imageElement.innerHTML =
+    '<img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png" />';
+
+  console.log(imageElement);
 }
